@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
-import heroImage from "@/assets/hero-planner.jpg";
 
 const Hero = () => {
   return (
@@ -8,8 +7,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIvPjwvZz48L3N2Zz4=')] opacity-30" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-left animate-fade-in">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="animate-fade-in">
             <div className="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
               100% Kostenlos - Keine Kreditkarte erforderlich
             </div>
@@ -20,12 +19,12 @@ const Hero = () => {
               Abnehm-Planner
             </h1>
             
-            <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+            <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed max-w-2xl mx-auto">
               Erreiche deine Traumfigur mit unserem wissenschaftlich erprobten Planner. 
               Strukturiert, motivierend und zu 100% kostenlos.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-bold px-8 py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all"
@@ -44,7 +43,7 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="flex items-center gap-8 mt-8 text-primary-foreground/80">
+            <div className="flex items-center justify-center gap-8 mt-12 text-primary-foreground/80">
               <div>
                 <div className="text-3xl font-bold text-accent">15.000+</div>
                 <div className="text-sm">Zufriedene Nutzer</div>
@@ -55,15 +54,6 @@ const Hero = () => {
                 <div className="text-sm">Durchschnittsbewertung</div>
               </div>
             </div>
-          </div>
-          
-          <div className="relative animate-fade-in-delay-1">
-            <div className="absolute -inset-4 bg-accent/20 rounded-3xl blur-2xl" />
-            <img 
-              src={heroImage} 
-              alt="14-Tage Abnehm-Planner Vorschau"
-              className="relative rounded-2xl shadow-[var(--shadow-bold)] w-full"
-            />
           </div>
         </div>
       </div>
