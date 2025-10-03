@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, ShoppingCart, Sparkles } from "lucide-react";
-import ebookCover from "@/assets/ebook-cover.jpg";
+import { Check, ShoppingCart, Sparkles, BookOpen } from "lucide-react";
 
 const benefits = [
   "10 wissenschaftlich bewiesene Abnehm-Strategien",
@@ -36,18 +35,13 @@ const EbookSection = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center bg-card/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-[var(--shadow-bold)] border border-accent/20">
-            <div className="animate-fade-in-delay-1">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-accent/30 rounded-2xl blur-xl group-hover:blur-2xl transition-all" />
-                <img 
-                  src={ebookCover}
-                  alt="10 Wissenschaftlich Bewiesene Abnehm-Tipps E-Book"
-                  className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto transform group-hover:scale-105 transition-transform"
-                />
-                <div className="absolute -top-4 -right-4 bg-destructive text-destructive-foreground font-bold text-lg px-6 py-3 rounded-full shadow-lg rotate-12">
-                  50% OFF
-                </div>
+          <div className="max-w-4xl mx-auto bg-card/95 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-[var(--shadow-bold)] border border-accent/20">
+            <div className="flex items-start justify-between mb-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-[var(--shadow-float)] animate-float">
+                <BookOpen className="w-10 h-10 text-accent-foreground" />
+              </div>
+              <div className="bg-destructive text-destructive-foreground font-bold text-lg px-6 py-3 rounded-full shadow-lg">
+                50% OFF
               </div>
             </div>
 

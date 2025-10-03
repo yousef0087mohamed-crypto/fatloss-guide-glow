@@ -2,6 +2,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 
 const Hero = () => {
+  const handleDownload = () => {
+    window.open("https://gumroad.com/l/abnehm-planner", "_blank");
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/90">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIvPjwvZz48L3N2Zz4=')] opacity-30" />
@@ -26,6 +30,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
+                onClick={handleDownload}
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-bold px-8 py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all"
               >
@@ -35,24 +40,11 @@ const Hero = () => {
               
               <Button 
                 size="lg" 
-                variant="outline"
-                className="border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6"
+                className="bg-accent/80 hover:bg-accent text-accent-foreground text-lg font-bold px-8 py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all"
               >
                 Mehr Erfahren
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </div>
-            
-            <div className="flex items-center justify-center gap-8 mt-12 text-primary-foreground/80">
-              <div>
-                <div className="text-3xl font-bold text-accent">15.000+</div>
-                <div className="text-sm">Zufriedene Nutzer</div>
-              </div>
-              <div className="h-12 w-px bg-primary-foreground/20" />
-              <div>
-                <div className="text-3xl font-bold text-accent">4.9/5</div>
-                <div className="text-sm">Durchschnittsbewertung</div>
-              </div>
             </div>
           </div>
         </div>
