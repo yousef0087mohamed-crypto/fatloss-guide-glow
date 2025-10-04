@@ -61,11 +61,11 @@ const Hero = () => {
       
       <button 
         onClick={scrollToEbook}
-        className="fixed right-0 top-1/2 -translate-y-1/2 bg-accent hover:bg-accent/90 text-accent-foreground px-3 py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all z-50 flex items-center gap-2 rounded-l-xl font-bold text-sm"
+        className="fixed right-0 top-1/2 -translate-y-1/2 bg-accent hover:bg-accent/90 text-accent-foreground px-2 md:px-3 py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all z-50 flex items-center gap-2 rounded-l-xl font-bold text-xs md:text-sm"
         style={{ writingMode: 'vertical-rl' }}
       >
-        <ArrowRight className="h-4 w-4" style={{ writingMode: 'horizontal-tb', transform: 'rotate(90deg)' }} />
-        Premium E-Book entdecken
+        <ArrowRight className="h-3 w-3 md:h-4 md:w-4" style={{ writingMode: 'horizontal-tb', transform: 'rotate(90deg)' }} />
+        Premium E-Book
       </button>
     </section>
   );
