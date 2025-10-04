@@ -46,7 +46,7 @@ const ProgressStats = () => {
             Nachgewiesene Erfolgsraten
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Unsere Nutzer berichten von beeindruckenden Ergebnissen
+            Wissenschaftlich fundierte Methoden mit nachweisbaren Resultaten
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const ProgressStats = () => {
             </div>
             <Progress value={weightLossProgress} className="h-4" />
             <p className="text-sm text-muted-foreground mt-3">
-              92% unserer Nutzer erreichen ihre Ziele innerhalb der ersten 2 Wochen
+              Wissenschaftlich bewährte Methoden für optimale Ergebnisse
             </p>
           </div>
 
@@ -75,7 +75,7 @@ const ProgressStats = () => {
             </div>
             <Progress value={motivationProgress} className="h-4" />
             <p className="text-sm text-muted-foreground mt-3">
-              96% bleiben auch nach dem 14-Tage-Plan motiviert und aktiv
+              Langfristige Gewohnheiten für dauerhaften Erfolg
             </p>
           </div>
         </div>

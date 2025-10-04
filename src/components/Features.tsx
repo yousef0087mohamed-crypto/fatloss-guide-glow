@@ -34,7 +34,7 @@ const Features = () => {
             Warum unser Planner funktioniert
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Über 15.000 Menschen haben bereits ihre Ziele erreicht
+            Ein bewährtes System für nachhaltigen Erfolg
           </p>
         </div>
         
