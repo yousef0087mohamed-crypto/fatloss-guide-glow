@@ -21,38 +21,38 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
-            <div className="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-block bg-accent/20 text-accent px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
               100% Kostenlos - Keine Kreditkarte erforderlich
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold text-primary-foreground mb-4 md:mb-6 leading-tight px-4">
               Dein kostenloser
               <span className="block text-accent">14-Tage</span>
               Abnehm-Planner
             </h1>
             
-            <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 md:mb-8 leading-relaxed max-w-2xl mx-auto px-4">
               Erreiche deine Traumfigur mit unserem wissenschaftlich erprobten Planner. 
               Strukturiert, motivierend und zu 100% kostenlos.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <Button 
                 onClick={handleDownload}
                 size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg font-bold px-8 py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base sm:text-lg font-bold px-6 sm:px-8 py-5 sm:py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all w-full sm:w-auto"
               >
-                <Download className="mr-2 h-5 w-5" />
+                <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Jetzt Kostenlos Herunterladen
               </Button>
               
               <Button 
                 onClick={handleLearnMore}
                 size="lg" 
-                className="bg-accent/80 hover:bg-accent text-accent-foreground text-lg font-bold px-8 py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all"
+                className="bg-accent/80 hover:bg-accent text-accent-foreground text-base sm:text-lg font-bold px-6 sm:px-8 py-5 sm:py-6 shadow-[var(--shadow-bold)] hover:scale-105 transition-all w-full sm:w-auto"
               >
                 Mehr Erfahren
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
           </div>

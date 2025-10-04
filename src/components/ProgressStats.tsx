@@ -39,48 +39,48 @@ const ProgressStats = () => {
   }, []);
 
   return (
-    <section id="progress-stats" className="py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section id="progress-stats" className="py-12 sm:py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in px-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 md:mb-4">
             Nachgewiesene Erfolgsraten
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Wissenschaftlich fundierte Methoden mit nachweisbaren Resultaten
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-12">
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-[var(--shadow-bold)] animate-fade-in-delay-1">
-            <div className="flex items-center justify-between mb-4">
+          <div className="bg-card rounded-2xl p-5 sm:p-6 md:p-8 border border-border shadow-[var(--shadow-bold)] animate-fade-in-delay-1">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-3 sm:gap-0">
               <div>
-                <h3 className="text-2xl font-bold text-foreground">Abnehm-Effizienz</h3>
-                <p className="text-muted-foreground mt-1">Durchschnittlicher Gewichtsverlust nach 14 Tagen</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground">Abnehm-Effizienz</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mt-1">Durchschnittlicher Gewichtsverlust nach 14 Tagen</p>
               </div>
-              <div className="text-4xl font-bold text-accent">{Math.round(weightLossProgress)}%</div>
+              <div className="text-3xl sm:text-4xl font-bold text-accent">{Math.round(weightLossProgress)}%</div>
             </div>
-            <Progress value={weightLossProgress} className="h-4" />
-            <p className="text-sm text-muted-foreground mt-3">
+            <Progress value={weightLossProgress} className="h-3 sm:h-4" />
+            <p className="text-xs sm:text-sm text-muted-foreground mt-3">
               Wissenschaftlich bewährte Methoden für optimale Ergebnisse
             </p>
           </div>
 
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-[var(--shadow-bold)] animate-fade-in-delay-2">
-            <div className="flex items-center justify-between mb-4">
+          <div className="bg-card rounded-2xl p-5 sm:p-6 md:p-8 border border-border shadow-[var(--shadow-bold)] animate-fade-in-delay-2">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-3 sm:gap-0">
               <div>
-                <h3 className="text-2xl font-bold text-foreground">Motivations-Effizienz</h3>
-                <p className="text-muted-foreground mt-1">Langfristige Motivation & Durchhaltevermögen</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground">Motivations-Effizienz</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mt-1">Langfristige Motivation & Durchhaltevermögen</p>
               </div>
-              <div className="text-4xl font-bold text-accent">{Math.round(motivationProgress)}%</div>
+              <div className="text-3xl sm:text-4xl font-bold text-accent">{Math.round(motivationProgress)}%</div>
             </div>
-            <Progress value={motivationProgress} className="h-4" />
-            <p className="text-sm text-muted-foreground mt-3">
+            <Progress value={motivationProgress} className="h-3 sm:h-4" />
+            <p className="text-xs sm:text-sm text-muted-foreground mt-3">
               Langfristige Gewohnheiten für dauerhaften Erfolg
             </p>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-10 sm:mt-12 md:mt-16 max-w-4xl mx-auto">
           {[
             { value: "2.8kg", label: "Ø Gewichtsverlust" },
             { value: "14 Tage", label: "Zum Erfolg" },
@@ -88,11 +88,11 @@ const ProgressStats = () => {
           ].map((stat, index) => (
             <div 
               key={stat.label}
-              className="text-center p-6 bg-card/50 rounded-xl border border-border/50 animate-fade-in"
+              className="text-center p-5 sm:p-6 bg-card/50 rounded-xl border border-border/50 animate-fade-in"
               style={{ animationDelay: `${index * 0.15 + 0.6}s` }}
             >
-              <div className="text-4xl font-bold text-accent mb-2">{stat.value}</div>
-              <div className="text-muted-foreground">{stat.label}</div>
+              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">{stat.value}</div>
+              <div className="text-sm sm:text-base text-muted-foreground">{stat.label}</div>
             </div>
           ))}
         </div>
